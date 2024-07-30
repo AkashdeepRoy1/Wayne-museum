@@ -19,13 +19,21 @@
 }
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
     background-color: rgba(179, 0, 36, 0.252);
 }
 
-/* .box{
+.box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
     border: 1px solid white;
-    margin: 25px;
-} */
+}
 
 .heading {
     font-size: 80px;
@@ -51,7 +59,7 @@ header {
 }
 
 .pages ul li {
-    font-size: 17px;
+    font-size: 15px;
     font-family: "Poppins", sans-serif;
     padding:5px;
     margin: 50px 75px;
@@ -62,10 +70,50 @@ header {
 
 .pages ul li:hover{
     font-weight: 200;
-    z-index: 100;
+    z-index: 1;
     padding: 5px;
     transform: scale(1.5);
     color: rgba(200, 199, 199, 0.647);
+}
+
+header div img {
+    margin: 35px;
+    transition: 1s;
+}
+
+.img {
+    z-index: 1;
+    transition: 1s;
+}
+
+.img :hover {
+    position: relative;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px white);
+}
+
+.ven{
+    position: absolute;
+    font-size: 20px;
+    font-family: "Teko", sans-serif;
+    font-weight: 10000;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 15px rgb(179, 0, 36);
+    padding-top: 50px;
+    color: rgb(179, 0, 36);
+    z-index: 2;
+    transition: 1s;
+    opacity: 0;
+}
+
+.ven:hover {
+    z-index: 2;
+    transform: scale(1.5);
+    text-shadow: 0 0 15px rgb(179, 0, 36);
+    opacity: 1;
 }
 
 main {
