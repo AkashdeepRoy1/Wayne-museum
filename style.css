@@ -7,23 +7,33 @@
     background-color: rgb(19, 19, 19);
 }
 
-.background::after{
+.background::after{ 
     content: "";
     background-image: url(img/peakpx.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    position: absolute;
+    position: fixed;
     inset: 0;
     z-index: -1;
     opacity: 0.15;
 }
 
+header {
+    background-color: rgba(179, 0, 36, 0.252);
+}
+
+/* .box{
+    border: 1px solid white;
+    margin: 25px;
+} */
+
 .heading {
-    font-size: 50px;
+    font-size: 80px;
     font-family: "Teko", sans-serif;
-    font-weight: 300;
+    font-weight: 10000;
     text-align: center;
-    margin: 15px;
+    text-shadow: 0 0 15px white;
+    padding-top: 50px;
     color: rgb(255, 255, 255);
     z-index: 1;
     transition: color 0.5s;
@@ -31,6 +41,7 @@
 
 .heading:hover{
     color: rgb(179, 0, 36);
+    text-shadow: 0 0 25px rgb(179, 0, 36);
 }
 
 .pages ul{
@@ -40,7 +51,7 @@
 }
 
 .pages ul li {
-    font-size: 20px;
+    font-size: 17px;
     font-family: "Poppins", sans-serif;
     padding:5px;
     margin: 50px 75px;
@@ -54,9 +65,9 @@
     z-index: 100;
     padding: 5px;
     transform: scale(1.5);
-    color: rgb(179, 0, 36);
+    color: rgba(200, 199, 199, 0.647);
 }
 
-body hr {
-    margin: 0px 50px;
+main {
+    height: 100vh;
 }
