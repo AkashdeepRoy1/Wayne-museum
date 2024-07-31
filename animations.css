@@ -1,0 +1,55 @@
+@keyframes slideInleft{
+    from {
+        transform: translateX(-500px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.slideInleft{
+    animation: slideInleft 0.5s ;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1s;
+}
+
+@keyframes popUp {
+    from {
+        transform: scale(0);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
+
+.popUp {
+    animation: popUp 1s;
+}
+
+@keyframes glow {
+    0%,100%{ 
+        text-shadow: 10px white;
+    }
+
+    10%,90%{
+        text-shadow: 50px white;
+    }
+}
+
+.glow {
+    animation: glow 1s ease-in-out  infinite ;
+}
